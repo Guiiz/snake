@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Grow, grow and grow...</title>
+<link rel="stylesheet" href="../css/style.css">
+<!-- Jquery -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+	type="text/javascript"></script>
+<script src="../js/snake.js"></script>
+</head>
+<body>
+	<!-- Lets make a simple snake game -->
+	<section class="container">
+		<canvas id="canvas" width="450" height="450" class="snake"></canvas>
+		<div class="snake">
+			<!-- p id="others">
+				You can try to beat other high score: <select id="other-score"
+					size="1"></select>
+			</p -->
+			<p id="high">
+				You have ongoing high score <span id="highscore"></span>. You can
+				try to improve it.
+			</p>
+			<p id="noHigh">You can start a new game to set a new high score.
+			</p>
+			<button id="startBtn" type="button" onclick="init()">Start</button>
+		</div>
+		<div class="login-help">
+			<p id="login">
+				Log in to save score: <a href="login.html">Login</a>.
+			</p>
+			<p id="loggedIn">
+				Logged in as <span id="user"></span> - <a href="login.html">Logout</a>.
+			</p>
+		</div>
+	</section>
+</body>
+</html>
